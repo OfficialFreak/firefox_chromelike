@@ -1,0 +1,196 @@
+/* ctrl + shift + alt + i to open the Browser Devtools */
+
+#PlacesToolbarItems {
+    padding-bottom: 1px;
+}
+
+#PlacesToolbarItems .bookmark-item {
+    padding: 3px;
+}
+
+.urlbar-input-container, #urlbar-background {
+    border-radius: 999vw !important;
+}
+
+#urlbar-background {
+    background: #252436 !important;
+}
+
+hbox[breakout-extend=true] #urlbar-background {
+    border-radius: 5px !important;
+    margin-inline-end: 8px;
+}
+
+#tabbrowser-tabs {
+    border-inline-start: unset !important;
+}
+
+#PlacesToolbar .toolbarbutton-icon {
+    margin-inline-end: 9px !important;
+}
+
+#navigator-toolbox {
+    background: #1E1E30 !important;
+}
+
+#nav-bar {
+    background: #3B394D !important;
+    border-radius: 8px 8px 0 0;
+}
+
+#PersonalToolbar {
+    background: #3B394D !important;
+}
+
+#identity-box {
+    border-radius: 999vw 0 0 999vw;
+    overflow: hidden;
+}
+
+#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button, #urlbar-label-box {
+    background: #3B394D !important;
+}
+
+#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button:hover, #urlbar-label-box:hover {
+    background: #4F4D5F !important;
+}
+
+#urlbar:not([breakout-extend=true]) hbox[pageproxystate=invalid] #identity-box {
+    margin-inline-end: 10px !important;
+}
+
+[breakout-extend=true] #identity-box {
+    border-radius: 5px !important;
+}
+
+#identity-box.extensionPage #identity-icon-box {
+    display: none;
+}
+
+#tracking-protection-icon-container {
+    display: none;
+}
+
+.titlebar-spacer[type=pre-tabs] {
+    display: none;
+}
+
+#alltabs-button {
+    display: none;
+}
+
+.tab-background {
+    border-radius: 7px !important;
+}
+
+.tab-background:is([selected], [multiselected]) {
+    background: #3b394d !important;
+    box-shadow: 0px 5px 0px 0px #3b394d !important;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.tab-background:is([selected], [multiselected])::before, .tab-background:is([selected], [multiselected])::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    box-shadow: 0 0 0 10px #3b394d;
+    background: #1e1e30;
+    overflow: clip;
+    clip-path: border-box;
+}
+
+.tab-background:is([selected], [multiselected])::before {
+    left: -10px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.tab-background:is([selected], [multiselected])::after {
+    right: -10px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+:root {
+    --inactive-titlebar-opacity: 1 !important;
+}
+
+#tabbrowser-arrowscrollbox-periphery {
+    margin-left: 9px;
+    z-index: 1;
+}
+
+#tabbrowser-arrowscrollbox-periphery .toolbarbutton-icon {
+    border-radius: 7px !important;
+}
+
+toolbar #tabs-newtab-button:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+    background: #423F7F !important;
+}
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]) {
+    background: #423F7F !important;
+}
+
+.tabbrowser-tab {
+    margin-left: 9px !important;
+    margin-right: -9px !important;
+    z-index: 1;
+}
+
+.tabbrowser-tab:is([visuallyselected], [multiselected]) {
+    overflow: visible !important;
+    z-index: 0;
+}
+
+.titlebar-close:hover {
+    box-shadow: 0 10px 0 0 #e81123;
+}
+
+.titlebar-close:hover:active {
+    box-shadow: 0 10px 0 0 #F16F7A !important;
+}
+
+findbar[hidden=true] {
+    transform: translateY(-200%) !important;
+}
+
+findbar {
+    position: absolute;
+    contain: unset !important;
+    top: 10px;
+    right: 10px;
+    background: #1C1B21 !important;
+    box-shadow: 3px 3px 24px #0b0b0b;
+    border: none !important;
+    border-radius: 10px;
+    transition: transform .1s ease-out !important;
+}
+
+findbar [anonid=find-case-sensitive], findbar [anonid=find-match-diacritics], findbar [anonid=find-entire-word] {
+    display: none;
+}
+
+findbar .findbar-textbox {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+findbar .checkbox-label {
+    display: none;
+}
+
+findbar .checkbox-check {
+    accent-color: rgb(104, 0, 255) !important;
+}
+
+findbar description {
+    display: none !important;
+}
+
+/* This is a hacky solution to replace the tabliss favicon */
+tab[label="Neuer Tab"] .tab-icon-stack img {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACtVBMVEUjIWEjIGEjIWANClEgHl8sKmcLCU4iIGAYFlkAAAAbGlslIGQbI1ZHFpSaAP+RAPyWAP+TAP95AbtrBZyQAP//AP9sBZ1bCXxFDlVLDWCAAMhqBphpBpdQDGojIWAjIWEjIWAiIWAjIWEiIGAjIWEjIWEhH18jIWEjIWEhH2ATEVUhH18jIWEhH2AjIWEiIGAqKGYhH2AkImIpJ2UlI2IiIGAQD1AdG1wjIWEhH18vLmo1M24fHV4iIGAqKWYcGlwAACkqJ2ddWYwrKWc6OHEZFlkiG2NNV3k+O3YpI2cVI051G8seJVkbI1ZgDriZAP9uCstGFpOZAP6SAf6aAP6ZAP6AAMuEANaPAPGPAPmSAP6RAPx/AMd/AMeAAMiBAMt+AMaHAN6QAPiVAP+BAM1/AMh9AMN2ArR3ArZ/AMd+AMVGATKFANZ7Ab5wBKdsBZ1pBpdoBpVoBpRtBKBzBZ+ZAP6QAP+AAMl/AMlrBZxsBZ1qBZlhCIhzA695AbuDANGHAN1+AMR8AcBzA61yA6pvBKU/EEtXCnZODGZODGZtBZ9pBZdpBpdqBpdkB46cAPNFDldQDGlTC25PDGlqBZkjIWEiIGAlI2IgHl8nJWQkImJGQ3sVE1dQT4F1dJwNC1E7OXJhX40kJl9BSXEeHlwkIGMmJGMsKmhCQHciH2BRTYMgHGA1HnltI70rIWsaIlU2Mm8lIWNTUIQlIGQgIl0iKlsaI1WLAvGXAP+KA/JHFpYeI1sdIloVGVQZI1MtHW9aDrBbELCUAP6RAfqSAPmSAPVqCb0/GIQ6HIFdELWOAfecAP+aAP+DANKCAM9+AMZ9AMOFAM6EAM+FANSPAOmRAP1/AMaBAMyAAMuAAMqAAMl9AMV+AMV7Ab95Abl1ArJoBpRpBpZqBZlpBpdnBpNRC2z///8ZSTK/AAAAlXRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQUCCmWrbAQCAwIIYNr9tAwLcuH8+8YRAirb/vz9+88XBsz6/fvATvz8Qob9/HGi/fuDqv36gZ79/v38aW76/P7+4asZD8r+/P7nTQQBDGCq2/v9PwMEAgICBR+VtgYBAQEBAQQEAQKRaQQBAQEBAwIHcx4CAUq/C7UAAAABYktHRObBbFoFAAAACXBIWXMAAB7CAAAewgFu0HU+AAAAB3RJTUUH6AkYCR8L+yfC1wAAARtJREFUGNMBEAHv/gAeAB8gIQEiIyQlJicoAh4AAAAnKQMqKyyVLZYuLwQoAB8AJwUwMTKXli0zNJY1NgY3AAAHODmYOjs8lZmaPZU+PwgnAEBBm0JDnJ2en6CYRKFFCQoARqJHo6SlpqeolamqSKtJCwBKrEutrq+wsbKztLVMtk0MAE63T7i5uru8vb6/wFDBUQ0AUsJTw8TFxsfIycrLVMxVDgBWzVfOz9DR0tPUWFla1VsPAFzWXV5f19jZ2ttg12FiYxAAZGXcZt3eZ99o3WlqawlsEQASbW5vcHHgcuHicxN0dXYUAHd4FRZ5envj5HwXfX5/gIEAEoKDhIWGGIfliBmJihoJCQAbixyMjY6PkJGSHZOUCQkJLRFtZtrobCgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDktMjRUMDk6MzA6NDIrMDA6MDCD0cdVAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTA5LTI0VDA5OjMwOjQyKzAwOjAw8ox/6QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=');
+}

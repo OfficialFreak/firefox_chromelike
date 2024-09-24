@@ -1,0 +1,99 @@
+/* Tabliss Custom CSS */
+/* Intended Use-case: 
+    Message
+    Search box
+    Quick Links
+    Custom CSS with the file content 
+*/
+
+.Overlay {
+    opacity: 0;
+}
+
+.Overlay:hover {
+    opacity: 1;
+}
+
+.middleCentre {
+    top: 45% !important;
+}
+
+@media (max-width: 560px) {
+    .middleCentre {
+        top: 50% !important;
+    }
+}
+
+.Widget:has(.Search) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Search {
+    margin-top: 3rem;
+    width: 90vw;
+    background: white;
+    color: black;
+    border-radius: 999vw;
+    overflow: hidden;
+    padding-left: 2rem;
+}
+
+@media (min-width: 672px) {
+    .Search {
+        width: 561px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Search {
+        width: 746px;
+    }
+}
+
+.Search > input {
+    margin: 0.5rem 0;
+    text-align: left;
+    font-size: 1.2rem
+}
+
+.Links {
+    padding: 0rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+}
+
+.Links > a {
+    padding: 1.5rem 0 1.5rem 0;
+    border-radius: 5px;
+    width: 7.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    overflow: hidden;
+}
+
+.Links a:hover {
+    background: #fff2;
+}
+
+.Links > a > i {
+    background: #444;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 999vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Links > a > span {
+    font-size: 1rem;
+    width: auto;
+    text-align: center;
+}
