@@ -41,13 +41,13 @@
 }
 
 @media (min-width: 672px) {
-    .Search {
+    .Dashboard .Widget {
         width: 561px;
     }
 }
 
 @media (min-width: 1000px) {
-    .Search {
+    .Dashboard .Widget {
         width: 746px;
     }
 }

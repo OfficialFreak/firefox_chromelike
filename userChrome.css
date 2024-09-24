@@ -63,6 +63,15 @@ hbox[breakout-extend=true] #urlbar-background {
     border-radius: 5px !important;
 }
 
+#urlbar:not([breakout-extend=true]) #page-action-buttons {
+    border-radius: 0 999vw 999vw 0;
+    overflow: hidden;
+}
+
+[breakout-extend=true] #page-action-buttons {
+    margin-right: 8px;
+}
+
 #identity-box.extensionPage #identity-icon-box {
     display: none;
 }
