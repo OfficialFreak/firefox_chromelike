@@ -1,5 +1,9 @@
 /* ctrl + shift + alt + i to open the Browser Devtools */
 
+.notificationbox-stack.global-notificationbox {
+    background: #3b394d;
+}
+
 #PlacesToolbarItems {
     padding-bottom: 1px;
 }
