@@ -20,7 +20,7 @@
     background: #252436 !important;
 }
 
-hbox[breakout-extend=true] #urlbar-background {
+div[breakout-extend=true] #urlbar-background {
     border-radius: 5px !important;
     margin-inline-end: 8px;
 }
@@ -59,7 +59,7 @@ hbox[breakout-extend=true] #urlbar-background {
     background: #4F4D5F !important;
 }
 
-#urlbar:not([breakout-extend=true]) hbox[pageproxystate=invalid] #identity-box {
+#urlbar:not([breakout-extend=true]) div[pageproxystate=invalid] #identity-box {
     margin-inline-end: 10px !important;
 }
 
