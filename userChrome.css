@@ -12,12 +12,22 @@
     padding: 3px;
 }
 
+.urlbar-input-container {
+    outline: 2px solid #252436;
+    outline-offset: -2px
+}
+
+div[breakout-extend=true] .urlbar-input-container {
+    outline: none;
+}
+
 .urlbar-input-container, #urlbar-background {
     border-radius: 999vw !important;
 }
 
 #urlbar-background {
     background: #252436 !important;
+    outline: none !important;
 }
 
 div[breakout-extend=true] #urlbar-background {
@@ -46,11 +56,6 @@ div[breakout-extend=true] #urlbar-background {
     background: #3B394D !important;
 }
 
-#identity-box {
-    border-radius: 999vw 0 0 999vw;
-    overflow: hidden;
-}
-
 #identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button, #urlbar-label-box {
     background: #3B394D !important;
 }
@@ -61,10 +66,6 @@ div[breakout-extend=true] #urlbar-background {
 
 #urlbar:not([breakout-extend=true]) div[pageproxystate=invalid] #identity-box {
     margin-inline-end: 10px !important;
-}
-
-[breakout-extend=true] #identity-box {
-    border-radius: 5px !important;
 }
 
 #urlbar:not([breakout-extend=true]) #page-action-buttons {
@@ -100,6 +101,7 @@ div[breakout-extend=true] #urlbar-background {
     background: #3b394d !important;
     box-shadow: 0px 5px 0px 0px #3b394d !important;
     border-radius: 10px 10px 0 0 !important;
+    outline: none !important;
 }
 
 .tab-background:is([selected], [multiselected])::before, .tab-background:is([selected], [multiselected])::after {
