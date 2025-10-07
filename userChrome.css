@@ -21,16 +21,16 @@ div[breakout-extend=true] .urlbar-input-container {
     outline: none;
 }
 
-.urlbar-input-container, #urlbar-background {
+.urlbar-input-container, .urlbar-background {
     border-radius: 999vw !important;
 }
 
-#urlbar-background {
+.urlbar-background {
     background: #252436 !important;
     outline: none !important;
 }
 
-div[breakout-extend=true] #urlbar-background {
+div[breakout-extend=true] .urlbar-background {
     border-radius: 5px !important;
     margin-inline-end: 8px;
 }
