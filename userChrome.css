@@ -1,7 +1,7 @@
 /* ctrl + shift + alt + i to open the Browser Devtools */
 
 .notificationbox-stack.global-notificationbox {
-    background: #3b394d;
+    background: #3b394da1;
 }
 
 #PlacesToolbarItems {
@@ -25,6 +25,22 @@ div[breakout-extend=true] .urlbar-input-container {
     border-radius: 999vw !important;
 }
 
+#urlbar {
+    opacity: 0.9;
+}
+
+#nav-bar::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(90deg,rgba(59, 57, 77, 0) 0%, rgb(59, 57, 77) 60%);
+    width: 10rem;
+    height: 100%;
+    z-index: -1;
+    border-radius: 0 10px 0 0;
+}
+
 .urlbar-background {
     background: #252436 !important;
     outline: none !important;
@@ -43,21 +59,18 @@ div[breakout-extend=true] .urlbar-background {
     margin-inline-end: 9px !important;
 }
 
-#navigator-toolbox {
-    background: #1E1E30 !important;
-}
-
 #nav-bar {
-    background: #3B394D !important;
+    background: #3b394da1 !important;
     border-radius: 8px 8px 0 0;
+    z-index: 0;
 }
 
 #PersonalToolbar {
-    background: #3B394D !important;
+    background: #3b394da1 !important;
 }
 
 #identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button, #urlbar-label-box {
-    background: #3B394D !important;
+    background: #3b394da1 !important;
 }
 
 #identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button:hover, #urlbar-label-box:hover {
@@ -98,8 +111,8 @@ div[breakout-extend=true] .urlbar-background {
 }
 
 .tab-background:is([selected], [multiselected]) {
-    background: #3b394d !important;
-    box-shadow: 0px 5px 0px 0px #3b394d !important;
+    background: #3b394da1 !important;
+    box-shadow: 0px 5px 0px 0px #3b394da1 !important;
     border-radius: 10px 10px 0 0 !important;
     outline: none !important;
 }
@@ -110,8 +123,7 @@ div[breakout-extend=true] .urlbar-background {
     width: 10px;
     height: 10px;
     bottom: 0;
-    box-shadow: 0 0 0 10px #3b394d;
-    background: #1e1e30;
+    box-shadow: 0 0 0 10px #3b394da1;
     overflow: clip;
     clip-path: border-box;
 }
@@ -140,11 +152,11 @@ div[breakout-extend=true] .urlbar-background {
 }
 
 toolbar #tabs-newtab-button:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-    background: #423F7F !important;
+    background: #423F7Fa1 !important;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]) {
-    background: #423F7F !important;
+    background: #423F7Fa1 !important;
 }
 
 .tabbrowser-tab {
