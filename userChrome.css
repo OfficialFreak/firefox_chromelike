@@ -17,7 +17,8 @@
     outline-offset: -2px;
 }
 
-div[breakout-extend="true"] .urlbar-input-container {
+/* KORREKTUR: ="true" entfernt */
+div[breakout-extend] .urlbar-input-container {
     outline: none;
 }
 
@@ -51,7 +52,8 @@ div[breakout-extend="true"] .urlbar-input-container {
     outline: none !important;
 }
 
-#urlbar[breakout-extend="true"] .urlbar-background {
+/* KORREKTUR: ="true" entfernt */
+#urlbar[breakout-extend] .urlbar-background {
     border-radius: 13px !important;
     margin-inline-start: 8px;
     border: none !important;
@@ -96,18 +98,19 @@ div[breakout-extend="true"] .urlbar-input-container {
     background: #4f4d5f !important;
 }
 
-#urlbar:not([breakout-extend="true"])
-    div[pageproxystate="invalid"]
-    #identity-box {
+/* KORREKTUR: ="true" entfernt */
+#urlbar:not([breakout-extend]) div[pageproxystate="invalid"] #identity-box {
     margin-inline-end: 10px !important;
 }
 
-#urlbar:not([breakout-extend="true"]) #page-action-buttons {
+/* KORREKTUR: ="true" entfernt */
+#urlbar:not([breakout-extend]) #page-action-buttons {
     border-radius: 0 999vw 999vw 0;
     overflow: hidden;
 }
 
-[breakout-extend="true"] #page-action-buttons {
+/* KORREKTUR: ="true" entfernt */
+[breakout-extend] #page-action-buttons {
     margin-right: 8px;
 }
 
@@ -117,6 +120,16 @@ div[breakout-extend="true"] .urlbar-input-container {
 
 #tracking-protection-icon-container {
     display: none;
+}
+
+#identity-box,
+.identity-box-button,
+#identity-icon-box,
+#urlbar-label-box,
+#urlbar-search-mode-indicator,
+#main-button,
+#main-button .button-background.labelled {
+    border-radius: 999vw !important;
 }
 
 .titlebar-spacer[type="pre-tabs"] {
